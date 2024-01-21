@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+}
+
+header {
+    position: relative;
+    text-align: center;
+    background-image: url(../image/image/wp1890591-peaky-blinders-wallpapers.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top-left-logo {
+    float: left;
+    display: block;
+    padding: 10px;
+}
+
+hr {
+    border-top: 2px solid black;
+    margin: 50px;
+    width: 500px;
+}
+
+h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    font-size: 50px;
+}
+
+.centered-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h2 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top: 50px;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: black;
+    margin-bottom: 10px;
+}
+
+footer {
+    position: relative; 
+    bottom: 0;
+    width: auto;
+    background-color: #333; 
+    color: white; 
+    text-align: center;
+    padding: 10px;
+}
+
+.center { 
+    display: flex; 
+    justify-content: center; 
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px
+}
+
+.flex-container > div {
+    width: 350px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.flex-container > div > a > p {
+    font-size: 18px;
+}
+
+.flex-container > div > a > img {
+    width: 300px;
+}
+
+/* Menu */
+.topnav ul {
+    float: right;
+    list-style: none;
+}
+
+.topnav li {
+    float: left;
+}
+
+.topnav {
+    overflow: hidden;
+    position: relative;
+    padding-right: 200px;
+}
+  
+.topnav a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 25px 30px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.topnav a.active {
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/* Tab */
+.center ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 600px;
+}
+
+.tab-flex {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+    background-color: #f1f1f1;
+}
+
+.tab {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.tab-active {
+    background-color: grey;
+}
+
+.content {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.content p {
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.content-active {
+    display: block;
+}
+
+/* Swiper slider */
+.swiper {
+    height: 60vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.slide-one {
+    background-image: url(../image/image/thomas-shelby-foret.jpeg);
+    background-size: cover;
+}
+
+.slide-two {
+    background-image: url(../image/image/thomas-shelby.jpeg);
+    background-size: cover;
+}
+
+.slide-three {
+    background-image: url(../image/image/tv_show-peaky_blinders-1071840.jpeg);
+    background-size: cover;
+}
+
+.subtitle {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: 3px;
+    padding-left: 100px;
+
+}
+
+.title {
+    font-weight: bold;
+    font-size: 72px;
+    color: white;
+    padding-left: 100px;
+}
+
+/* Dark mode */
+.switch-mode {
+    cursor: pointer;
+}
+
+.dark {
+    background: #333;
+}
+
+/* Menu Burger */
+@media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav {
+        padding-right: 0px;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative; background-color: #333;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .topnav.responsive li{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+    .topnav.responsive ul {
+        float: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .flex-container {
+        flex-direction: column;
+    }
+}

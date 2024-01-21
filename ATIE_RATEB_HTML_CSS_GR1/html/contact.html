@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <header>
+        <div class="top-left-logo">
+            <a href="index.html">
+                <img src="../image/image/peaky-blinders-logo-47E0448C0B-seeklogo.com.png" width="80px">
+            </a>
+        </div>
+        <div class="topnav" id="myTopnav">
+            <ul>
+                <li><a href="index.html">Page d'accueil</a></li>
+                <li><a href="contact.html">Nous contacter</a></li>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="burgerMenu()">
+                        <i class="fa fa-bars"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="centered-heading">
+            <h1>
+                Peaky Blinders
+            </h1>
+        </div>
+    </header>
+    <div class="contact-form">
+        <h2>
+            N'hésitez pas à nous contacter pour plus d'informations.
+        </h2>
+        <h1></h1>
+        <div class="message-error">
+            <ul></ul>
+        </div>
+        <div class="message-success"></div>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="pseudo">Pseudo</label>
+                <input type="text" name="pseudo" id="pseudo">
+            </div>
+            
+            <div>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+            </div>
+            
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" name="password" id="password">
+            </div>
+            
+            <div>
+                <label for="password2">Entrer à nouveau le mot de passe</label>
+                <input type="password" name="password2" id="password2">
+            </div>
+            
+            <button type="submit">S'inscrire</button>
+            
+        </form>
+    </div>
+
+    <script src="../js/contact.js"></script>
+    <script src="../js/main.js"></script>
+    
+</body>
+</html>
